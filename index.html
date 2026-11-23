@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#607d8e" />
+  <meta name="description" content="A little birthday letter, made with love." />
+  <title>A little letter for you ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wallpaper" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="moth-light moth-light--one" aria-hidden="true"></div>
+  <div class="moth-light moth-light--two" aria-hidden="true"></div>
+  <main class="site">
+    <header class="topline">
+      <div class="logo-mark" aria-label="made by tntl">made by <strong>tntl</strong><span>✳</span></div>
+      <span class="topnote" data-text="miniDate">a little gift, just for you</span>
+      <button class="sound-mini" id="soundToggle" type="button" aria-label="Bật hoặc tắt nhạc" title="Bật hoặc tắt nhạc">
+        <span class="sound-symbol">♫</span><span id="soundLabel">music off</span>
+      </button>
+    </header>
+    <div class="story" id="story">
+      <!-- INTRO: PHONG THƯ NIÊM PHONG -->
+      <section class="scene scene--intro is-active" data-scene="0" aria-label="Phong thư sinh nhật" aria-hidden="false">
+        <div class="intro-composition">
+          <p class="tiny-script scene-overline">a little something, just for you <span>✧</span></p>
+          <div class="intro-heading" data-text="coverTitle">a little letter,<br />for you.</div>
+          <img src="assets/rose.svg" alt="" class="sticker intro-rose" draggable="false" />
+          <img src="assets/butterfly.svg" alt="" class="sticker intro-butterfly" draggable="false" />
+          <div class="postmark postmark--intro" aria-hidden="true">A LETTER<br />WITH LOVE<br /><span>♡ · ♡</span></div>
+          <div class="envelope-wrap envelope-wrap--intro" id="envelopeOpen" role="button" tabindex="0" aria-label="Nhấn để mở phong thư">
+            <div class="envelope-shadow"></div>
+            <div class="envelope-base">
+              <div class="envelope-lining"></div>
+              <div class="envelope-flap-back"></div>
+              <div class="envelope-paper-peek"><span>for you, always</span></div>
+              <div class="envelope-flap-left"></div>
+              <div class="envelope-flap-right"></div>
+              <div class="envelope-flap-bottom"></div>
+              <div class="envelope-flap-front"></div>
+              <div class="paper-stain paper-stain--first"></div>
+              <div class="paper-stain paper-stain--second"></div>
+              <div class="envelope-address">TO: <span data-text="recipient">my favorite person</span></div>
+              <div class="wax-seal" aria-hidden="true"><span>♡</span></div>
+            </div>
+          </div>
+          <div class="intro-arrow" aria-hidden="true">↝</div>
+          <div class="intro-prompt">tap the wax seal to open <span>♡</span></div>
+          <div class="intro-small-caption">a birthday story, wrapped in paper & memories</div>
+        </div>
+      </section>
+
+      <!-- SCENE 1: LÁ THƯ MỞ NHƯ MỘT TRANG SCRAPBOOK -->
+      <section class="scene scene--reveal" data-scene="1" aria-label="Phong thư vừa mở" aria-hidden="true">
+        <div class="scrapbook scrapbook--reveal">
+          <div class="scribble scribble--left">a note for you <span>↘</span></div>
+          <div class="scribble scribble--right">made with love <span>♡</span></div>
+          <img src="assets/flower.svg" alt="" class="sticker reveal-flower" draggable="false" />
+          <img src="assets/rose.svg" alt="" class="sticker reveal-rose" draggable="false" />
+          <img src="assets/butterfly.svg" alt="" class="sticker reveal-butterfly" draggable="false" />
+          <div class="photo-strip photo-strip--reveal" id="stripOpen" role="button" tabindex="0" aria-label="Xem những tấm ảnh kỷ niệm">
+            <div class="film-frame"><img class="photo-img" data-photo="0" src="assets/photobooth-placeholder.svg" alt="Kỷ niệm 1" /></div>
+            <div class="film-frame"><img class="photo-img" data-photo="1" src="assets/photobooth-placeholder.svg" alt="Kỷ niệm 2" /></div>
+            <div class="film-frame"><img class="photo-img" data-photo="2" src="assets/photobooth-placeholder.svg" alt="Kỷ niệm 3" /></div>
+            <div class="film-frame"><img class="photo-img" data-photo="3" src="assets/photobooth-placeholder.svg" alt="Kỷ niệm 4" /></div>
+          </div>
+          <div class="reveal-envelope">
+            <div class="reveal-open-fold"></div>
+            <div class="reveal-left-fold"></div>
+            <div class="reveal-right-fold"></div>
+            <div class="reveal-bottom-fold"></div>
+            <div class="wax-seal wax-seal--reveal"><span>♡</span></div>
+          </div>
+          <button class="note-peek scallop" id="letterOpen" type="button">
+            <span class="note-subtitle" data-text="letterTo">To my dearest friend,</span>
+            <strong data-text="openingTitle">for the sweetest soul</strong>
+            <span class="note-preview">On your birthday, I hope the world is a little softer, the skies a little bluer, and every dream a little closer.</span>
+            <span class="note-touch">open my letter <span>↗</span></span>
+          </button>
+          <figure class="small-polaroid small-polaroid--reveal" id="revealPolaroid">
+            <img data-photo="0" class="photo-img" src="assets/photobooth-placeholder.svg" alt="Kỷ niệm" />
+          </figure>
+          <span class="torn-tape torn-tape--right" aria-hidden="true"></span>
+          <div class="reveal-bottom-label">handmade with all the love in the world · <span id="revealPageCounter">02 / 06</span></div>
+        </div>
+      </section>
+
+      <!-- SCENE 2: LÁ THƯ VIẾT TAY -->
+      <section class="scene scene--letter" data-scene="2" aria-label="Đọc thư sinh nhật" aria-hidden="true">
+        <div class="scrapbook scrapbook--letter">
+          <img class="sticker letter-rose" src="assets/rose.svg" alt="" draggable="false" />
+          <img class="sticker letter-flower" src="assets/flower.svg" alt="" draggable="false" />
+          <div class="open-envelope-behind" aria-hidden="true"><div class="open-envelope-flap"></div><div class="open-envelope-left"></div><div class="open-envelope-right"></div><div class="open-envelope-bottom"></div><div class="wax-seal"><span>♡</span></div></div>
+          <article class="letter-sheet scallop">
+            <div class="letter-header">FROM MY HEART TO YOURS <span>✦</span></div>
+            <div class="letter-scroll">
+              <p class="letter-salutation" data-text="letterTo">To my dearest friend,</p>
+              <h1 class="letter-title" data-text="letterTitle">Happy birthday, beautiful soul.</h1>
+              <div class="letter-copy" id="letterParagraphs"></div>
+              <p class="letter-sign" data-text="letterSign">with love, always ♡</p>
+              <p class="letter-from">— <span data-text="from">someone who is always cheering for you</span></p>
+            </div>
+            <div class="letter-corner">✧</div>
+          </article>
+          <span class="scribble scribble--letter-top">to brighter tomorrows</span>
+          <span class="scribble scribble--letter-bottom">you deserve all the lovely things <span>✿</span></span>
+        </div>
+      </section>
+
+      <!-- SCENE 3: PHOTOBOOTH & POLAROIDS -->
+      <section class="scene scene--memories" data-scene="3" aria-label="Album ảnh kỷ niệm" aria-hidden="true">
+        <div class="scrapbook scrapbook--memories">
+          <p class="memories-overline">a few little memories</p>
+          <h2 class="memories-heading" data-text="photoHeading">little pieces of us</h2>
+          <span class="scribble memories-sub" data-text="photoNote">Some memories deserve to live forever.</span>
+          <div class="memory-film">
+            <div class="film-frame"><img class="photo-img" data-photo="0" src="assets/photobooth-placeholder.svg" alt="Ảnh 1" /></div>
+            <div class="film-frame"><img class="photo-img" data-photo="1" src="assets/photobooth-placeholder.svg" alt="Ảnh 2" /></div>
+            <div class="film-frame"><img class="photo-img" data-photo="2" src="assets/photobooth-placeholder.svg" alt="Ảnh 3" /></div>
+            <div class="film-frame"><img class="photo-img" data-photo="3" src="assets/photobooth-placeholder.svg" alt="Ảnh 4" /></div>
+          </div>
+          <div class="polaroid-layout">
+            <button class="polaroid polaroid--one" data-zoom="0" aria-label="Phóng to ảnh 1" type="button"><img class="photo-img" data-photo="0" src="assets/photobooth-placeholder.svg" alt="Ảnh kỷ niệm 1" /><span data-caption="0">the sweetest days</span></button>
+            <button class="polaroid polaroid--two" data-zoom="1" aria-label="Phóng to ảnh 2" type="button"><img class="photo-img" data-photo="1" src="assets/photobooth-placeholder.svg" alt="Ảnh kỷ niệm 2" /><span data-caption="1">in our little world</span></button>
+            <button class="polaroid polaroid--three" data-zoom="2" aria-label="Phóng to ảnh 3" type="button"><img class="photo-img" data-photo="2" src="assets/photobooth-placeholder.svg" alt="Ảnh kỷ niệm 3" /><span data-caption="2">keep this moment</span></button>
+          </div>
+          <img class="sticker memories-flower" src="assets/flower.svg" alt="" draggable="false" />
+          <img class="sticker memories-butterfly" src="assets/butterfly.svg" alt="" draggable="false" />
+          <span class="torn-tape torn-tape--memory" aria-hidden="true"></span>
+          <div class="photo-hint">tap a photo to see it closer <span>✧</span></div>
+        </div>
+      </section>
+
+      <!-- SCENE 4: ĐĨA NHẠC / ẢNH POLAROID -->
+      <section class="scene scene--music" data-scene="4" aria-label="Bài nhạc dành cho bạn" aria-hidden="true">
+        <div class="scrapbook scrapbook--music">
+          <p class="music-overline">side a · a song for you</p>
+          <div class="record-art">
+            <div class="vinyl" id="vinyl" aria-hidden="true"><div class="vinyl-lines"></div><div class="vinyl-sticker"><span>♡</span><small data-text="trackTitle">a song for you</small><i>33⅓ RPM</i></div></div>
+            <button class="record-polaroid" id="recordPolaroid" data-zoom="3" type="button" aria-label="Phóng to tấm ảnh trên đĩa nhạc"><img class="photo-img" data-photo="3" src="assets/photobooth-placeholder.svg" alt="Ảnh bên cạnh đĩa nhạc" /><span data-caption="3">the best part</span></button>
+            <img class="sticker record-flower" src="assets/flower.svg" alt="" draggable="false" />
+            <img class="sticker record-rose" src="assets/rose.svg" alt="" draggable="false" />
+            <div class="hand-music" aria-hidden="true">♩ ♪ ♫</div>
+          </div>
+          <div class="record-copy">
+            <div class="record-smalltitle">put your headphones on...</div>
+            <h2 data-text="recordHeading">and if this moment<br />had a soundtrack…</h2>
+            <p data-text="recordNote">Bài hát này dành cho những khoảnh khắc đáng nhớ và cho một người thật đặc biệt.</p>
+            <button class="record-play" type="button" id="playButton"><span id="playIcon">▶</span><span id="playText">play our song</span></button>
+            <div class="lyric-paper" id="lyricsPanel" aria-label="Lời bài hát">
+              <div class="lyric-paper-head"><span>the lyrics</span><span aria-hidden="true">✧ · ♡</span></div>
+              <div class="lyric-scroll" id="lyricsScroll" tabindex="0" aria-label="Cuộn xem lời bài hát">
+                <p class="lyric-empty">your favorite words will live here ♡</p>
+              </div>
+              <div class="lyric-paper-foot" aria-hidden="true">a little song, a little piece of us.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCENE 5: CỎ BỐN LÁ / ĐIỀU ƯỚC -->
+      <section class="scene scene--wish" data-scene="5" aria-label="Điều ước sinh nhật" aria-hidden="true">
+        <div class="scrapbook scrapbook--wish">
+          <span class="wish-overline">one last little thing...</span>
+          <h2 data-text="wishHeading">a little wish for you</h2>
+          <img class="sticker wish-flower" src="assets/flower.svg" alt="" draggable="false" />
+          <button class="four-leaf" id="clover" type="button" aria-label="Nhấn vào cỏ bốn lá để nhận điều ước">
+            <span class="leaf leaf--one"></span><span class="leaf leaf--two"></span><span class="leaf leaf--three"></span><span class="leaf leaf--four"></span>
+            <span class="clover-center"><span class="clover-ornament">✧ · ♡ · ✧</span><span class="clover-wish" data-text="wishText">May all the love you give<br />find its way back to you.</span><span class="clover-tap">tap for a wish</span></span>
+          </button>
+          <p class="wish-revealed" id="wishRevealed" data-text="wishAfter">Make a wish. The world is yours. ✧</p>
+          <p class="wish-footnote">thank you for existing, and for being you.</p>
+        </div>
+      </section>
+    </div>
+    <nav class="navigation" aria-label="Chuyển cảnh">
+      <button class="nav-back" id="backButton" type="button"><span>←</span> back</button>
+      <div class="pagination" aria-label="Tiến trình câu chuyện" id="pagination"><button data-page="0" aria-label="Cảnh 1" class="is-active"></button><button data-page="1" aria-label="Cảnh 2"></button><button data-page="2" aria-label="Cảnh 3"></button><button data-page="3" aria-label="Cảnh 4"></button><button data-page="4" aria-label="Cảnh 5"></button><button data-page="5" aria-label="Cảnh 6"></button></div>
+      <button class="nav-next" id="nextButton" type="button">next <span>→</span></button>
+    </nav>
+    <footer class="footerline"><span>made by tntl <span aria-hidden="true">♡</span></span><span id="pageCounter" aria-live="polite" aria-atomic="true">01 / 06</span></footer>
+  </main>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="photo-modal" id="photoModal" aria-label="Xem ảnh kỷ niệm"><button class="photo-close" type="button" id="closePhoto" aria-label="Đóng ảnh">×</button><figure><img src="assets/photobooth-placeholder.svg" id="zoomedPhoto" alt="Ảnh kỷ niệm phóng to" /><figcaption id="zoomedCaption"></figcaption></figure></dialog>
+  <audio id="birthdayAudio" loop preload="none"></audio>
+  <!-- Nội dung đã cá nhân hoá nằm ở đây. Tránh tải file JavaScript rời trên Windows. -->
+  <script>
+/* Crafted by tntl. */
+window.BIRTHDAY_CONFIG = {
+  "theme": "original",
+  "recipient": "my dearest nhảnh",
+  "from": "your husband, linh dăm",
+  "miniDate": "a little gift, just for you",
+  "coverTitle": "a little letter,\nfor you.",
+  "openingTitle": "for the sweetest soul",
+  "letterTo": "To my dearest friend,",
+  "letterTitle": "Happy Birthday, to the Friend Fate Brought Me.",
+  "letterParagraphs": [
+    "I think I'm starting to believe in fate a little more because of you. It's funny how we've known each other since our second year of university, but it wasn't until our trip to China that we actually became friends. I never really thought we'd get this close, but I'm glad we did. Looking back, I think that trip gave me something I didn't even know I was missing - a really good \"wife\".",
+    "Sometimes I wish we'd become friends sooner. We've only been close for a few months, but somehow it feels like we've known each other for years. I don't really know how to explain it, but being around you just feels comfortable. I like how we can talk, laugh, and be ourselves without having to try too hard. I guess I just wish we'd had more time to make memories together. But I'm really glad we became friends, even if it took us a while.",
+    "Anyway, happy birthday, nhảnh!!!! I hope this new chapter of your life brings you lots of happiness, good memories, and everything you've been hoping for. I hope things work out for you, even the little things you don't always talk about. And I hope we stay like this for a long time, still talking about random things, laughing at stupid jokes, and making more memories together. I'm really glad we're friends, and I hope we have a lot more time ahead of us."
+  ],
+  "letterSign": "with love, always ♡",
+  "photoHeading": "little pieces of us",
+  "photoNote": "Some memories deserve to live forever.",
+  "photoCaptions": [
+    "the birthday girl herself",
+    "from strangers to memories",
+    "so glad we found each other",
+    "just nhảnh being nhảnh"
+  ],
+  "photos": [
+    "assets/photo-1.jpg",
+    "assets/photo-2.jpg",
+    "assets/photo-3.jpg",
+    "assets/photo-4.jpg"
+  ],
+  "recordHeading": "and if this moment\nhad a soundtrack…",
+  "recordNote": "Bài hát này dành cho những khoảnh khắc đáng nhớ và cho một người thật đặc biệt.",
+  "trackTitle": "a song for you - is there someone else",
+  "music": "assets/your-song.mp4",
+  "lyrics": "[00:00.00] I wanna be with you forever\n[00:03.45] Forever\n[00:06.60] Oh, is there someone else or not?\n[00:11.50] 'Cause I wanna keep you close\n[00:14.90] I don't wanna lose my spot\n[00:18.55] 'Cause I need to know\n[00:20.60] If you're hurting him, or you're hurting me\n[00:23.55] If I ain't with you, I don't wanna be\n[00:28.45] Is there someone else or not? ♡",
+  "wishHeading": "a little wish for you",
+  "wishText": "May all the good things you wish \nfor slowly find their way to you.",
+  "wishAfter": "Make a wish. The world is yours. ✧"
+};
+
+  </script>
+  <script>
+(() => {
+  'use strict';
+  const cfg = window.BIRTHDAY_CONFIG || {};
+  document.documentElement.classList.toggle('theme-original', cfg.theme === 'original');
+  if (cfg.theme === 'original') {
+    document.querySelectorAll('.intro-rose,.reveal-rose,.letter-rose,.record-rose').forEach(img => { img.src = 'assets/rose-red.svg'; });
+  }
+  const scenes = [...document.querySelectorAll('.scene')];
+  const dots = [...document.querySelectorAll('[data-page]')];
+  const back = document.getElementById('backButton');
+  const next = document.getElementById('nextButton');
+  const counter = document.getElementById('pageCounter');
+  const revealCounter = document.getElementById('revealPageCounter');
+  const audio = document.getElementById('birthdayAudio');
+  const vinyl = document.getElementById('vinyl');
+  const playButton = document.getElementById('playButton');
+  const playIcon = document.getElementById('playIcon');
+  const playText = document.getElementById('playText');
+  const soundLabel = document.getElementById('soundLabel');
+  const seal = document.getElementById('envelopeOpen');
+  const modal = document.getElementById('photoModal');
+  let active = 0;
+  let transitioning = false;
+  let toastTimer;
+
+  const fallbackPhoto = 'assets/photobooth-placeholder.svg';
+  const photos = Array.from({ length: 4 }, (_, i) => cfg.photos?.[i]?.trim() || fallbackPhoto);
+  const captions = Array.from({ length: 4 }, (_, i) => cfg.photoCaptions?.[i] || ['our little day','so much love','sweet memories','you and me'][i]);
+
+  // Lời chúc, ảnh, nhạc đều lấy từ config.js.
+  document.querySelectorAll('[data-text]').forEach(el => {
+    const value = cfg[el.dataset.text];
+    if (typeof value === 'string') el.textContent = value;
+  });
+  document.querySelectorAll('[data-photo]').forEach(img => {
+    img.src = photos[Number(img.dataset.photo)];
+    img.addEventListener('error', () => {
+      if (!img.src.endsWith('photobooth-placeholder.svg')) img.src = fallbackPhoto;
+    }, { once: true });
+  });
+  document.querySelectorAll('[data-caption]').forEach(el => {
+    const caption = captions[Number(el.dataset.caption)];
+    el.textContent = caption;
+    // Fit longer captions in the Polaroid's paper border without hiding words in the gallery.
+    const n = [...caption].length;
+    el.style.setProperty('--caption-size', n > 105 ? '12px' : n > 65 ? '14px' : n > 35 ? '17px' : '24px');
+    el.parentElement.title = caption;
+    el.parentElement.classList.toggle('has-long-caption', n > 35);
+  });
+  const letterParagraphs = document.getElementById('letterParagraphs');
+  (Array.isArray(cfg.letterParagraphs) ? cfg.letterParagraphs : []).forEach(paragraph => {
+    const p = document.createElement('p');
+    p.textContent = String(paragraph);
+    letterParagraphs.append(p);
+  });
+  if (cfg.recipient) document.title = `For ${cfg.recipient} ♡`;
+  if (cfg.music && typeof cfg.music === 'string') audio.src = cfg.music.trim();
+
+  // Plain text is shown as a handwritten lyric sheet. Optional LRC timestamps
+  // [mm:ss.xx] allow a line to be highlighted during audio playback.
+  const lyricScroll = document.getElementById('lyricsScroll');
+  const rawLyrics = typeof cfg.lyrics === 'string' ? cfg.lyrics.trim() : '';
+  const timedLines = [];
+  const lyricRows = [];
+  if (rawLyrics) {
+    lyricScroll.replaceChildren();
+    for (const rawLine of rawLyrics.split(/\r?\n/)) {
+      const timeTags = [...rawLine.matchAll(/\[(\d{1,2}):(\d{2})(?:[.,](\d{1,3}))?\]/g)];
+      const words = rawLine.replace(/\[\d{1,2}:\d{2}(?:[.,]\d{1,3})?\]/g, '').trim();
+      const line = document.createElement('p');
+      line.className = words ? 'lyric-line' : 'lyric-line lyric-line--space';
+      line.textContent = words || '\u00a0';
+      lyricScroll.append(line);
+      lyricRows.push(line);
+      if (timeTags.length && words) {
+        for (const match of timeTags) {
+          const fraction = match[3] ? Number('0.' + match[3]) : 0;
+          timedLines.push({ at: Number(match[1]) * 60 + Number(match[2]) + fraction, el: line });
+        }
+      }
+    }
+    timedLines.sort((a, b) => a.at - b.at);
+    document.getElementById('lyricsPanel').classList.toggle('is-timed', timedLines.length > 0);
+  }
+  let lastHighlighted = null;
+  function syncLyrics() {
+    if (!timedLines.length) return;
+    let current = null;
+    for (const entry of timedLines) {
+      if (entry.at <= audio.currentTime + .08) current = entry.el;
+      else break;
+    }
+    if (current === lastHighlighted) return;
+    if (lastHighlighted) lastHighlighted.classList.remove('is-current');
+    if (current) {
+      current.classList.add('is-current');
+      // Scroll only the lyrics, without moving the whole page.
+      const offset = current.offsetTop - lyricScroll.offsetTop - lyricScroll.clientHeight / 2 + current.offsetHeight / 2;
+      lyricScroll.scrollTo({ top: Math.max(0, offset), behavior: 'smooth' });
+    }
+    lastHighlighted = current;
+  }
+  audio.addEventListener('timeupdate', syncLyrics);
+  audio.addEventListener('seeked', syncLyrics);
+
+  function toast(message) {
+    const el = document.getElementById('toast');
+    el.textContent = message;
+    el.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove('is-visible'), 3200);
+  }
+
+  function goTo(page) {
+    if (page < 0 || page >= scenes.length || transitioning || page === active) return;
+    const target = Math.floor(page);
+    if (active === 0 && target > 0) {
+      transitioning = true;
+      seal.classList.add('is-opening');
+      setTimeout(() => {
+        transitioning = false;
+        activate(target);
+      }, 760);
+    } else {
+      activate(target);
+    }
+  }
+  function activate(page) {
+    active = page;
+    scenes.forEach((scene, i) => {
+      const current = i === page;
+      scene.classList.toggle('is-active', current);
+      scene.setAttribute('aria-hidden', String(!current));
+      scene.inert = !current;
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('is-active', i === page);
+      if (i === page) dot.setAttribute('aria-current', 'step');
+      else dot.removeAttribute('aria-current');
+    });
+    back.disabled = page === 0;
+    next.disabled = page === scenes.length - 1;
+    // Always derive numbering from the same active scene and total scene count.
+    const formatPage = number => String(number).padStart(2, '0');
+    const total = formatPage(scenes.length);
+    counter.textContent = `${formatPage(page + 1)} / ${total}`;
+    if (revealCounter) {
+      const revealScene = revealCounter.closest('[data-scene]');
+      revealCounter.textContent = `${formatPage(Number(revealScene.dataset.scene) + 1)} / ${total}`;
+    }
+    if (page !== 0) seal.classList.remove('is-opening');
+  }
+  activate(0);
+  back.addEventListener('click', () => goTo(active - 1));
+  next.addEventListener('click', () => goTo(active + 1));
+  dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.page))));
+
+  function clickOrEnter(el, fn) {
+    el.addEventListener('click', fn);
+    el.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault(); fn();
+      }
+    });
+  }
+  clickOrEnter(seal, () => goTo(1));
+  document.getElementById('letterOpen').addEventListener('click', () => goTo(2));
+  clickOrEnter(document.getElementById('stripOpen'), () => goTo(3));
+  document.addEventListener('keydown', event => {
+    if (modal.open || event.target.closest('button, input, textarea')) return;
+    if (event.key === 'ArrowRight') goTo(active + 1);
+    if (event.key === 'ArrowLeft') goTo(active - 1);
+  });
+
+  // Gallery: tap a photo to enlarge.
+  document.querySelectorAll('[data-zoom]').forEach(button => button.addEventListener('click', () => {
+    const i = Number(button.dataset.zoom);
+    document.getElementById('zoomedPhoto').src = photos[i];
+    document.getElementById('zoomedCaption').textContent = captions[i];
+    if (!modal.open) modal.showModal();
+  }));
+  document.getElementById('closePhoto').addEventListener('click', () => modal.close());
+  modal.addEventListener('click', event => { if (event.target === modal) modal.close(); });
+
+  // Chrome/iOS only permit playback AFTER someone taps the play button.
+  function updatePlaying(playing) {
+    vinyl.classList.toggle('is-playing', playing);
+    playButton.setAttribute('aria-pressed', String(playing));
+    playIcon.textContent = playing ? 'Ⅱ' : '▶';
+    playText.textContent = playing ? 'pause our song' : 'play our song';
+    soundLabel.textContent = playing ? 'music on' : 'music off';
+  }
+  async function toggleMusic() {
+    if (!audio.src || !cfg.music?.trim()) {
+      vinyl.classList.toggle('is-playing');
+      toast('Thêm nhạc vào assets/ rồi điền đường dẫn trong config.js nhé ♫');
+      return;
+    }
+    if (!audio.paused) {
+      audio.pause(); updatePlaying(false); return;
+    }
+    try {
+      await audio.play();
+      updatePlaying(true);
+    } catch (error) {
+      updatePlaying(false);
+      toast('Không mở được bài nhạc. Hãy kiểm tra tên và đường dẫn file trong config.js.');
+      console.warn('[birthday] Music playback failed:', error);
+    }
+  }
+  playButton.addEventListener('click', toggleMusic);
+  document.getElementById('soundToggle').addEventListener('click', toggleMusic);
+  audio.addEventListener('ended', () => { updatePlaying(false); if (lastHighlighted) lastHighlighted.classList.remove('is-current'); lastHighlighted = null; });
+  audio.addEventListener('error', () => { updatePlaying(false); if (cfg.music) toast('Không tìm thấy file nhạc. Kiểm tra assets/ và config.js.'); });
+
+  // A small shower of paper stars after a wish.
+  document.getElementById('clover').addEventListener('click', () => {
+    const holder = document.getElementById('sparkles');
+    const colours = ['#f8f5ec','#bfdae0','#8eb2c6','#d5e3d9','#b6c9da'];
+    const symbols = ['✧', '✦', '♡', '✳', '·'];
+    for (let i = 0; i < 48; i++) {
+      const el = document.createElement('span');
+      el.className = 'spark';
+      el.textContent = symbols[i % symbols.length];
+      el.style.setProperty('--x', `${Math.random() * 100}%`);
+      el.style.setProperty('--dx', `${Math.random() * 170 - 85}px`);
+      el.style.setProperty('--duration', `${2.5 + Math.random() * 2.2}s`);
+      el.style.setProperty('--size', `${12 + Math.random() * 16}px`);
+      el.style.setProperty('--color', colours[i % colours.length]);
+      el.addEventListener('animationend', () => el.remove(), {once: true});
+      holder.append(el);
+    }
+    document.getElementById('wishRevealed').classList.add('is-visible');
+  });
+})();
+
+  </script>
+</body>
+</html>

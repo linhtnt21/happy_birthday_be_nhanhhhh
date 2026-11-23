@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="305" viewBox="0 0 260 305"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b6cfdd"/><stop offset="1" stop-color="#e9e7d9"/></linearGradient></defs>
+<rect width="260" height="305" fill="url(#bg)"/>
+<circle cx="178" cy="69" r="40" fill="#f8f5e8" opacity=".75"/><path d="M0 215Q65 156 121 211Q173 175 260 196V305H0" fill="#8aa7a5" opacity=".5"/><path d="M0 244Q89 209 174 252Q220 225 260 229V305H0" fill="#6f92a2" opacity=".5"/>
+<g stroke="#f7f4e8" fill="none" opacity=".85" stroke-width="3"><path d="M123 266Q111 165 147 99M128 225Q86 183 63 174M133 190Q177 139 200 150"/><path d="M147 99q-13-28 0-31q19 0 0 31m0 0q26-22 34-9q1 17-34 9m0 0q-28 13-31-1q5-20 31 1"/><path d="M63 174q-15-23-22-15q-5 15 22 15m0 0q24-24 27-9q-6 12-27 9"/></g>
+<text x="130" y="292" fill="#f9f6e9" text-anchor="middle" font-family="Georgia" font-style="italic" font-size="12" letter-spacing="3">YOUR MEMORY</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+ <defs>
+  <pattern id="grain" width="180" height="180" patternUnits="userSpaceOnUse"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".35" numOctaves="3" stitchTiles="stitch"/></filter><rect width="180" height="180" filter="url(#n)" opacity=".09"/></pattern>
+  <g id="sprig" fill="none" stroke="#d3e2e6" stroke-width="1.65" stroke-linecap="round" opacity=".17">
+   <path d="M3 165 C36 110 62 82 50 11 M23 130 C6 99 2 68 16 40 M37 104 C63 90 90 70 94 45 M44 66 C18 56 8 28 8 14"/>
+   <path d="M23 130 Q-13 122 3 101 Q33 102 23 130 M30 116 Q55 113 62 91 Q34 88 30 116 M19 83 Q-4 77 8 52 Q35 55 19 83 M53 60 Q83 63 94 34 Q65 32 53 60" />
+   <path d="M50 11 C41-6 32-8 27 5 C18 4 16 16 26 21 C24 33 39 37 44 26 C58 33 65 22 58 13 C68 1 58-8 50 11 Z"/>
+   <path d="M94 45 C83 31 80 17 93 16 C99 6 111 10 110 23 C126 25 124 40 112 42 C116 58 101 62 94 45 Z"/>
+  </g>
+  <g id="flower" fill="none" stroke="#deeaef" stroke-width="1.4" opacity=".13"><path d="M0 82Q-20 64-12 43 Q0 31 11 49 L0 82 M0 82Q18 61 32 72 Q25 98 0 82M0 82Q-12 101-24 94Q-31 76 0 82M0 82Q3 111 17 121M0 82Q0 38 1 6"/><ellipse cx="1" cy="0" rx="12" ry="24"/><ellipse cx="1" cy="0" rx="12" ry="24" transform="rotate(55 1 0)"/><ellipse cx="1" cy="0" rx="12" ry="24" transform="rotate(110 1 0)"/><ellipse cx="1" cy="0" rx="12" ry="24" transform="rotate(165 1 0)"/><circle r="6"/></g>
+ </defs>
+ <rect width="600" height="600" fill="#607d8e"/>
+ <rect width="600" height="600" fill="url(#grain)" opacity=".7"/>
+ <use href="#sprig" transform="translate(75,45) scale(1.55) rotate(-14)"/>
+ <use href="#sprig" transform="translate(402,35) scale(1.3) rotate(18)"/>
+ <use href="#sprig" transform="translate(280,355) scale(1.7) rotate(-42)"/>
+ <use href="#sprig" transform="translate(38,425) scale(1.45) rotate(19)"/>
+ <use href="#sprig" transform="translate(514,376) scale(1.4) rotate(125)"/>
+ <use href="#flower" transform="translate(233,156) rotate(35) scale(.87)"/>
+ <use href="#flower" transform="translate(538,214) rotate(-22) scale(.7)"/>
+ <use href="#flower" transform="translate(150,548) rotate(62) scale(.9)"/>
+ <path d="M0 200Q80 160 140 203M350 600Q442 550 600 580" fill="none" stroke="#c3d5dc" stroke-width=".8" opacity=".09"/>
+</svg>

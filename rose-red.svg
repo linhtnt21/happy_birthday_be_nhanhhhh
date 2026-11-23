@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="270" viewBox="0 0 260 270"><defs>
+<linearGradient id="petal" x1=".2" x2=".9" y1="0" y2="1"><stop stop-color="#e5a4a9"/><stop offset=".48" stop-color="#983a51"/><stop offset="1" stop-color="#62233a"/></linearGradient>
+<linearGradient id="petal2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1ceca"/><stop offset=".53" stop-color="#b05a6a"/><stop offset="1" stop-color="#762e48"/></linearGradient>
+<linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#becbc2"/><stop offset="1" stop-color="#698d84"/></linearGradient>
+<filter id="sh"><feGaussianBlur stdDeviation="1.1"/></filter></defs>
+<g transform="translate(0,-6) rotate(-12 140 120)">
+<path d="M135 151Q125 207 202 255" fill="none" stroke="#587b72" stroke-width="4"/>
+<path d="M143 186Q99 148 63 168Q78 216 143 186" fill="url(#leaf)" stroke="#607e79" stroke-width="2"/><path d="M142 185L72 174" fill="none" stroke="#4e766d"/>
+<path d="M160 215Q208 187 240 201Q218 237 160 215" fill="url(#leaf)" stroke="#607e79" stroke-width="2"/><path d="M166 214L230 203" fill="none" stroke="#4e766d"/>
+<g stroke="#74344a" stroke-width="1.4">
+<path d="M131 153C77 187 50 126 69 94C84 56 123 66 130 84C173 35 215 73 204 113C236 169 168 190 131 153Z" fill="url(#petal)"/>
+<path d="M129 155Q77 178 68 137Q58 94 96 81Q77 126 121 122Z" fill="url(#petal2)"/>
+<path d="M133 148Q197 193 210 125Q203 97 176 92Q191 124 152 125Z" fill="url(#petal2)"/>
+<path d="M113 144Q72 109 99 71Q127 50 142 90Q168 53 194 82Q217 125 155 145Z" fill="url(#petal)"/>
+<path d="M114 119Q96 82 131 78Q165 74 173 105Q179 133 141 144Z" fill="url(#petal2)"/>
+<path d="M130 127Q102 107 120 92Q135 82 151 100Q173 93 167 117Q161 135 136 137Z" fill="url(#petal)"/>
+<path d="M133 127Q120 111 137 104Q153 105 153 118Q145 128 133 127" fill="#672940"/>
+<path d="M135 117Q137 110 147 113" fill="none" stroke="#efd6d0" stroke-width="2"/>
+</g></g></svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="290" viewBox="0 0 260 290">
+<defs><linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffefa"/><stop offset=".52" stop-color="#edf4f2"/><stop offset="1" stop-color="#9cb9c6"/></linearGradient><linearGradient id="l"><stop stop-color="#6e9188"/><stop offset="1" stop-color="#bbcbc2"/></linearGradient></defs>
+<g transform="translate(5 3) rotate(14 128 146)">
+<path d="M130 146Q115 195 150 281" stroke="#688982" stroke-width="4" fill="none"/><path d="M123 190Q84 157 48 185Q67 220 123 190 M130 228Q189 193 222 223Q183 255 130 228" fill="url(#l)" stroke="#6d9086" stroke-width="2"/>
+<g fill="url(#p)" stroke="#93afb7" stroke-width="1.6">
+<path d="M126 133C81 104 56 64 88 43Q117 29 138 91"/><path d="M127 132Q113 59 154 33Q198 34 160 118"/><path d="M132 126Q167 73 202 91Q221 119 163 147"/><path d="M138 133Q207 121 217 156Q203 198 151 157"/><path d="M133 139Q171 194 137 211Q101 199 114 153"/><path d="M126 142Q105 197 73 183Q48 151 105 131"/><path d="M125 135Q68 146 62 106Q69 77 113 122"/>
+</g><circle cx="130" cy="135" r="23" fill="#b6d0cf" stroke="#8fa9ab" stroke-width="2"/><g fill="#e4bc66"><circle cx="120" cy="131" r="2.5"/><circle cx="136" cy="126" r="3"/><circle cx="127" cy="140" r="2.5"/><circle cx="142" cy="141" r="2.5"/><circle cx="123" cy="150" r="2.7"/></g>
+</g></svg>
